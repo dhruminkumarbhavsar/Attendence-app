@@ -14,7 +14,6 @@ phases:
   post_build:
     commands:
       - echo "Deploying to S3..."
-      - aws s3 sync . s3://attendence-codepipeline-app--delete
 
 artifacts:
   files:

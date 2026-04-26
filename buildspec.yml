@@ -3,17 +3,16 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing AWS CLI"
-      - aws --version
+      - echo Installing
 
   build:
     commands:
-      - echo "Build phase started"
-      - echo "Static files ready"
+      - echo Build started
+      - echo Static files ready
 
   post_build:
     commands:
-      - echo "Deploying to S3..."
+      - echo Build completed
 
 artifacts:
   files:
